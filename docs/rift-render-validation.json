@@ -1,0 +1,39 @@
+{
+  "source": "Packaged Spring Boot server, installed headless Google Chrome, live three-sentinel matches; software WebGL, no clock mocking",
+  "maps": [
+    {
+      "id": "foundry",
+      "renderer": "software",
+      "measuredFps": 48.9,
+      "renderWidth": "495",
+      "drawCalls": "48",
+      "triangles": "52726"
+    },
+    {
+      "id": "aqueduct",
+      "renderer": "software",
+      "measuredFps": 22.8,
+      "renderWidth": "479",
+      "drawCalls": "82",
+      "triangles": "86866"
+    },
+    {
+      "id": "citadel",
+      "renderer": "software",
+      "measuredFps": 26.2,
+      "renderWidth": "479",
+      "drawCalls": "89",
+      "triangles": "75400"
+    },
+    {
+      "id": "orbital",
+      "renderer": "software",
+      "measuredFps": 34.4,
+      "renderWidth": "479",
+      "drawCalls": "52",
+      "triangles": "51922"
+    }
+  ],
+  "packagedWebSocket": "passed",
+  "browserErrors": []
+}

@@ -1,0 +1,19 @@
+{
+  "frontend_tests": 213,
+  "backend_tests": 10,
+  "focused_browser_scenarios": 6,
+  "final_packaged_smoke": "passed",
+  "long_browser_tour": {
+    "waypoints": 9,
+    "distance_m": 2449.09,
+    "collisions": 0,
+    "browser_errors": [],
+    "renderer": "Chrome ANGLE SwiftShader software WebGL",
+    "average_frame_ms": 169.6271
+  },
+  "package_sha256": "c10ef57afe261efce92f39abdeae5c557011c6c5021fe6282694f4b4ea967665",
+  "servers_stopped": [
+    8080,
+    5173
+  ]
+}

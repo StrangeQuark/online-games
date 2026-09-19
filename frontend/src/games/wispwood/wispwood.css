@@ -1,0 +1,394 @@
+.wispwood-game {
+  --arcade-accent: #d1d59f;
+  max-width: 1160px;
+}
+.wisp-statbar {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 15px 21px;
+  border: 1px solid #6b886455;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(120deg, #293e34, #1d3231);
+}
+.wisp-statbar > div {
+  display: grid;
+  gap: 6px;
+}
+.wisp-statbar > div > span {
+  font-size: 7px;
+  letter-spacing: 1.3px;
+  color: #9cb494;
+}
+.wisp-statbar strong {
+  font:
+    25px Georgia,
+    serif;
+  color: #e2d8b0;
+  font-variant-numeric: tabular-nums;
+}
+.wisp-statbar small {
+  font-size: 12px;
+  color: #8aa18a;
+}
+.wisp-lantern-count strong {
+  display: flex;
+  gap: 9px;
+}
+.wisp-lantern-count i {
+  font-style: normal;
+  color: #5f7b63;
+  font-size: 25px;
+  line-height: 1;
+}
+.wisp-lantern-count i.lit {
+  color: #e7d295;
+  text-shadow: 0 0 13px #e0d09244;
+}
+.wisp-statbar > .wisp-dash-meter {
+  margin-left: auto;
+}
+.wisp-dash-meter strong {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font:
+    11px "DM Sans",
+    sans-serif;
+  color: #b2cba3;
+}
+.wisp-stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid #6b886455;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  background: #153a3a;
+  box-shadow: 0 20px 55px #0003;
+}
+.wisp-stage canvas {
+  display: block;
+  width: 100%;
+  height: clamp(420px, calc(100svh - 410px), 650px);
+  touch-action: none;
+  outline-offset: -3px;
+  scroll-margin-top: 8px;
+}
+.wisp-stage .arcade-overlay {
+  background: #173930ed;
+}
+.wisp-stage .wisp-intro {
+  background:
+    linear-gradient(0deg, #15372cfa, #18382dcc),
+    url("/assets/wispwood.webp") center/cover;
+}
+.wisp-wordmark {
+  font:
+    italic clamp(50px, 6vw, 82px) Georgia,
+    serif;
+  letter-spacing: -3px;
+  color: #e8e0b8;
+  line-height: 1.1;
+}
+.wisp-wordmark > span {
+  display: inline-block;
+  vertical-align: top;
+  color: #d2cf91;
+  font-size: 0.42em;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+.wisp-intro .arcade-eyebrow {
+  color: #bcc99b;
+}
+.wisp-stage .arcade-overlay-card p {
+  color: #b0c6ad;
+}
+.wisp-menu-button {
+  display: flex;
+  margin: 11px auto 0;
+}
+.wisp-intro .arcade-overlay-note {
+  color: #9fb694;
+  font-size: 9px;
+  letter-spacing: 0.3px;
+}
+.wisp-intro .wisp-best {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #b4b987;
+  margin-top: 20px;
+}
+.wisp-three-lights {
+  display: block;
+  font:
+    40px Georgia,
+    serif;
+  color: #ead39b;
+  letter-spacing: 14px;
+  margin-bottom: 23px;
+  text-shadow: 0 0 19px #e7dc9966;
+}
+.wisp-clear {
+  background: #16392dda !important;
+  backdrop-filter: blur(4px);
+}
+.wisp-underbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 17px 2px;
+  color: #9db19b;
+  font-size: 10px;
+}
+.wisp-underbar label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  white-space: nowrap;
+  color: #b6c3a2;
+}
+.wisp-underbar input {
+  accent-color: #c9cc98;
+}
+.wisp-below {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 10px;
+}
+.wisp-guide {
+  padding: 22px;
+  border: 1px solid #69866344;
+  background: linear-gradient(130deg, #253f34, #1b3330);
+  border-radius: 9px;
+}
+.wisp-guide h3 {
+  font:
+    25px Georgia,
+    serif;
+  color: #ded9b2;
+  margin: 10px 0 17px;
+}
+.wisp-guide p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #a2b69d;
+}
+.wisp-guide b {
+  font-weight: 500;
+  color: #d1d6ac;
+}
+.wisp-groves {
+  padding-top: 21px;
+}
+.wisp-groves > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+.wisp-groves button {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  text-align: left;
+  padding: 15px 10px;
+  border: 1px solid #788e6355;
+  background: #253f33;
+  color: #cbd5af;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.wisp-groves button[aria-current="step"] {
+  background: #506249;
+  border-color: #bdc08d;
+  color: #f0e1b4;
+}
+.wisp-groves button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.wisp-groves button > span {
+  font:
+    20px Georgia,
+    serif;
+}
+.wisp-groves small {
+  font-size: 8px;
+  line-height: 1.6;
+  color: #a7b79b;
+}
+.wisp-touch-controls {
+  display: none;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+}
+.wisp-touch-controls > div {
+  display: flex;
+  gap: 9px;
+}
+.wisp-touch-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border: 1px solid #88a27477;
+  background: #304c3a;
+  color: #d5dfb5;
+  border-radius: 8px;
+  min-width: 60px;
+  min-height: 59px;
+  touch-action: none;
+  user-select: none;
+}
+.wisp-touch-button > span {
+  font-size: 8px;
+}
+.wisp-touch-button.jump {
+  background: #b7c295;
+  color: #233f35;
+  min-width: 77px;
+}
+.wisp-touch-button:active {
+  background: #688257;
+  border-color: #d5d7a5;
+}
+.wisp-stage-pause {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid #a1bc8566;
+  background: #203d37c9;
+  border-radius: 6px;
+  color: #e5dfb1;
+  cursor: pointer;
+}
+.focus-game .wisp-stage canvas {
+  height: min(70svh, 780px);
+}
+@media (pointer: coarse) {
+  .wisp-touch-controls {
+    display: flex;
+  }
+  .wisp-stage-pause {
+    display: grid;
+  }
+}
+@media (max-width: 700px) {
+  .wisp-stage canvas {
+    height: 410px;
+  }
+  .wisp-statbar {
+    gap: 22px;
+    padding: 12px 13px;
+  }
+  .wisp-statbar strong {
+    font-size: 21px;
+  }
+  .wisp-statbar > div > span {
+    font-size: 6px;
+    letter-spacing: 0.8px;
+  }
+  .wisp-lantern-count strong {
+    gap: 5px;
+  }
+  .wisp-lantern-count i {
+    font-size: 23px;
+  }
+  .wisp-statbar > .wisp-dash-meter {
+    display: none;
+  }
+  .wisp-touch-controls {
+    display: flex;
+  }
+  .wisp-stage-pause {
+    display: grid;
+  }
+  .wisp-underbar {
+    gap: 12px;
+    align-items: start;
+    font-size: 9px;
+    line-height: 1.6;
+  }
+  .wisp-underbar > span {
+    max-width: 220px;
+  }
+  .wisp-underbar label {
+    font-size: 9px;
+  }
+  .wisp-below {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .wisp-guide {
+    padding: 19px;
+  }
+  .wisp-guide h3 {
+    font-size: 22px;
+  }
+  .wisp-guide p {
+    font-size: 10px;
+  }
+  .wisp-groves {
+    padding: 24px 0 0;
+  }
+  .wisp-groves button {
+    padding: 12px 9px;
+  }
+  .wisp-groves > div {
+    gap: 6px;
+  }
+  .wisp-wordmark {
+    font-size: 56px;
+  }
+  .wisp-stage .arcade-overlay-card > .arcade-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.1px;
+  }
+  .wisp-stage .arcade-overlay-card > svg {
+    width: 28px;
+    height: 28px;
+  }
+  .wisp-stage .arcade-overlay-card > .primary {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
+  .wisp-stage .arcade-overlay-card h3 {
+    font-size: 27px;
+  }
+  .wisp-stage .arcade-overlay-note {
+    font-size: 8px;
+    line-height: 1.8;
+  }
+  .wisp-stage .arcade-final-score {
+    font-size: 42px;
+  }
+  .wisp-stage .arcade-overlay-card p {
+    font-size: 11px;
+  }
+  .wisp-three-lights {
+    font-size: 35px;
+    letter-spacing: 10px;
+  }
+  .focus-game .wisp-stage canvas {
+    height: 410px;
+  }
+}
+@media (pointer: coarse) and (max-height: 500px) and (min-width: 701px) {
+  .wisp-stage canvas,
+  .focus-game .wisp-stage canvas {
+    height: calc(100svh - 85px);
+  }
+  .wisp-touch-controls {
+    margin-top: 10px;
+  }
+}

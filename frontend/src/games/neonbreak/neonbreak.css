@@ -1,0 +1,231 @@
+.arcade-game.neonbreak-game {
+  max-width: 1040px;
+}
+.neon-lives {
+  margin-left: auto;
+}
+.neon-lives strong {
+  display: flex;
+  gap: 6px;
+  color: #f2a7b4;
+  min-height: 28px;
+  align-items: center;
+}
+.neon-wordmark {
+  font:
+    800 clamp(52px, 7vw, 88px)/0.93 "Manrope",
+    sans-serif;
+  letter-spacing: -5px;
+  color: #a9e9dc;
+  text-shadow: 0 0 48px #49c7b522;
+  margin: 18px 0 20px;
+}
+.neon-wordmark span {
+  color: #f8c2a8;
+}
+.neon-intro {
+  background: radial-gradient(ellipse at 50% 40%, #112935dd, #0a1224ed);
+}
+.neon-underbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 15px 3px;
+  color: #9cb6c1;
+  font-size: 11px;
+}
+.neon-underbar > span > i {
+  font-style: normal;
+  padding: 0 9px;
+  opacity: 0.5;
+}
+.neon-active-powers {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.neon-active-powers > span {
+  background: #173f42;
+  border: 1px solid #6cc6b24d;
+  color: #a9e4d2;
+  font-size: 9px;
+  border-radius: 4px;
+  padding: 5px 8px;
+}
+.neon-power-guide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 18px;
+}
+.neon-power-guide > span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-transform: capitalize;
+  color: #a9bdc5;
+  font-size: 11px;
+}
+.neon-power-guide b {
+  font-size: 19px;
+  width: 30px;
+  height: 28px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+}
+.focus-game .arcade-game.neonbreak-game {
+  max-width: min(1040px, calc((100svh - 270px) * 1.4516));
+}
+@media (max-width: 700px) {
+  .neon-wordmark {
+    font-size: 49px;
+    letter-spacing: -3px;
+    margin: 10px 0;
+  }
+  .neon-stage {
+    min-height: 0;
+  }
+  .neon-stage canvas {
+    height: auto;
+    aspect-ratio: 900 / 620;
+  }
+  .neon-lives strong {
+    gap: 3px;
+  }
+  .neon-lives strong svg {
+    width: 12px;
+  }
+  .neonbreak-game .arcade-statbar {
+    gap: 16px;
+  }
+  .neon-intro .arcade-overlay-card > .arcade-eyebrow {
+    font-size: 7px;
+    margin: 0 0 8px;
+  }
+  .focus-game .arcade-game.neonbreak-game {
+    max-width: 100%;
+  }
+  .neon-power-guide {
+    gap: 12px;
+  }
+}
+
+.neon-resume {
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.neon-resume small {
+  width: 100%;
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.neon-motion {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+}
+.neon-motion input {
+  accent-color: #86d6c1;
+}
+.neon-stage {
+  scroll-margin-top: 12px;
+}
+.neon-stage .arcade-overlay {
+  overflow-y: auto;
+}
+@media (min-width: 701px) {
+  .arcade-game.neonbreak-game {
+    max-width: min(1040px, calc((100svh - 395px) * 1.4516));
+    min-width: 560px;
+  }
+}
+
+.neon-touch-strip {
+  display: none;
+}
+@media (max-width: 700px) {
+  .neon-stage:has(.arcade-overlay) {
+    min-height: 350px;
+  }
+  .neon-touch-strip {
+    display: block;
+    position: relative;
+    height: 64px;
+    border: 1px solid #638a824d;
+    border-radius: 8px;
+    background: #1b343a;
+    touch-action: none;
+    cursor: ew-resize;
+    margin-top: 9px;
+    user-select: none;
+  }
+  .neon-touch-strip span {
+    position: absolute;
+    inset: 13px 0 auto;
+    text-align: center;
+    font-size: 8px;
+    letter-spacing: 1.7px;
+    color: #9abeb5;
+    pointer-events: none;
+  }
+  .neon-touch-strip:before {
+    content: "";
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    height: 3px;
+    bottom: 16px;
+    background: #76968b38;
+    border-radius: 4px;
+  }
+  .neon-touch-strip i {
+    position: absolute;
+    width: 34px;
+    height: 6px;
+    bottom: 15px;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    background: #b8e8d5;
+    box-shadow: 0 0 12px #76b8a44d;
+    pointer-events: none;
+  }
+  .neon-touch-strip:focus-visible {
+    outline: 2px solid #d9c288;
+    outline-offset: 3px;
+  }
+}
+.neon-stage-pause {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid #a6dbc166;
+  border-radius: 6px;
+  color: #e5ead2;
+  background: #173339cc;
+  cursor: pointer;
+}
+@media (pointer: coarse), (max-width: 700px) {
+  .neon-stage-pause {
+    display: grid;
+  }
+}
+@media (pointer: coarse) and (max-height: 500px) and (min-width: 701px) {
+  .arcade-game.neonbreak-game {
+    min-width: 0;
+    max-width: calc((100svh - 28px) * 1.4516);
+  }
+}
+.neon-stage canvas {
+  scroll-margin-top: 8px;
+}

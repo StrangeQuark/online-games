@@ -1,0 +1,486 @@
+.keepsake-game {
+  max-width: 1140px;
+  outline: none;
+}
+.keepsake-game .arcade-actions {
+  gap: 7px;
+}
+.keepsake-game .arcade-select {
+  max-width: 185px;
+}
+.keepsake-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 0 0 24px;
+  padding: 0 3px;
+}
+.keepsake-heading h2 {
+  font:
+    36px Georgia,
+    serif;
+  color: #e8dcc1;
+  margin: 10px 0 9px;
+}
+.keepsake-heading p {
+  font-size: 12px;
+  color: #9db2ae;
+  margin: 0;
+}
+.keepsake-progress {
+  width: 150px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.keepsake-progress strong {
+  font:
+    31px "Manrope",
+    sans-serif;
+  color: #d9c69b;
+}
+.keepsake-progress small {
+  font-size: 16px;
+  color: #7e9691;
+}
+.keepsake-progress > span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 1.8px;
+  margin: 6px 0 10px;
+  color: #a6b6a7;
+}
+.keepsake-progress progress {
+  width: 100%;
+  height: 4px;
+  accent-color: #aebf91;
+  display: block;
+}
+.keepsake-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 22px;
+  align-items: start;
+}
+.keepsake-frame {
+  padding: 12px;
+  background: linear-gradient(135deg, #a99165, #69573d);
+  border-radius: 12px;
+  box-shadow:
+    0 16px 35px #07101666,
+    inset 0 1px 1px #f1dfb599;
+}
+.keepsake-board {
+  width: 100%;
+  aspect-ratio: 3/2;
+  position: relative;
+  background: #d5ceb2;
+  border: 1px solid #4b4e35;
+  overflow: hidden;
+  border-radius: 3px;
+  isolation: isolate;
+}
+.keepsake-reference {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+.keepsake-reference.visible {
+  opacity: 0.27;
+}
+.keepsake-board.seamless .keepsake-reference {
+  opacity: 1;
+}
+.keepsake-board.seamless .keepsake-placed-piece,
+.keepsake-board.seamless .keepsake-outlines {
+  opacity: 0;
+}
+.keepsake-outlines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #908d703d;
+  stroke-width: 1.2;
+  pointer-events: none;
+}
+.keepsake-placed-piece {
+  position: absolute;
+  pointer-events: none;
+  animation: keepsake-fit 0.23s ease-out;
+}
+.keepsake-piece-art {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+  pointer-events: none;
+}
+.keepsake-slots {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  z-index: 2;
+}
+.keepsake-slots button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  outline: none;
+  cursor: default;
+}
+.keepsake-slots button:enabled {
+  cursor: crosshair;
+}
+.keepsake-slots button:enabled:hover,
+.keepsake-slots button.cursor {
+  background: #ddb56533;
+  box-shadow: inset 0 0 0 2px #c0964b;
+}
+.keepsake-start-note {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+  pointer-events: none;
+  color: #746f4e;
+  text-shadow: 0 1px #f4eccc;
+  font:
+    22px/1.35 Georgia,
+    serif;
+}
+.keepsake-start-note svg {
+  color: #9a8859;
+}
+.keepsake-underpicture {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.keepsake-underpicture > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10px;
+  color: #a4b3a4;
+}
+.keepsake-message {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #b5c1b4;
+  margin: 18px 2px;
+  min-height: 40px;
+}
+.keepsake-tray {
+  background: linear-gradient(135deg, #233e3c, #1a2e32);
+  padding: 18px;
+  border: 1px solid #6d837348;
+  border-radius: 12px;
+}
+.keepsake-tray-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.keepsake-tray-heading strong {
+  display: block;
+  font:
+    18px Georgia,
+    serif;
+  color: #dddbc0;
+  margin-top: 9px;
+}
+.keepsake-edges {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #aebba9;
+  font-size: 10px;
+  margin: 17px 0 12px;
+  cursor: pointer;
+}
+.keepsake-edges input {
+  accent-color: #c8b379;
+}
+.keepsake-tray-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  align-content: start;
+}
+.keepsake-tray-piece {
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: #b7c2960a;
+  cursor: grab;
+  touch-action: none;
+  aspect-ratio: 1.08;
+  min-width: 0;
+  transition:
+    background 0.15s,
+    transform 0.15s;
+}
+.keepsake-tray-piece:hover,
+.keepsake-tray-piece.selected {
+  background: #a0b09524;
+  border-color: #d6bd7e88;
+  transform: translateY(-2px);
+}
+.keepsake-tray-piece:focus-visible {
+  outline: 2px solid #e2c28b;
+  outline-offset: 2px;
+}
+.keepsake-tray-piece:active {
+  cursor: grabbing;
+}
+.keepsake-tray-pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #aebea9;
+  font-size: 11px;
+  gap: 10px;
+  margin-top: 15px;
+}
+.keepsake-tray-pages button {
+  padding: 7px;
+}
+.keepsake-tray-empty {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 5px;
+  color: #9dbb9c;
+  min-height: 180px;
+}
+.keepsake-tray-empty p {
+  font:
+    19px/1.5 Georgia,
+    serif;
+  max-width: 190px;
+}
+.keepsake-drag-piece {
+  position: fixed;
+  z-index: 2000;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  filter: drop-shadow(0 9px 9px #08182099);
+  aspect-ratio: 1.08;
+}
+.keepsake-complete {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px;
+  margin-top: 20px;
+  background: #304b3b;
+  border: 1px solid #98af7659;
+  border-radius: 9px;
+  color: #c7d4aa;
+  animation: keepsake-fit 0.3s ease-out;
+}
+.keepsake-complete > div {
+  flex: 1;
+}
+.keepsake-complete span {
+  font-size: 8px;
+  letter-spacing: 1.6px;
+  color: #b0c29c;
+}
+.keepsake-complete h3 {
+  font:
+    25px Georgia,
+    serif;
+  color: #eee0b6;
+  margin: 8px 0;
+}
+.keepsake-complete p {
+  font-size: 10px;
+  color: #b8c5a8;
+  margin: 0;
+}
+.keepsake-complete .arcade-button {
+  font-size: 11px;
+  padding: 11px;
+}
+.keepsake-guide {
+  margin-top: 24px;
+}
+.keepsake-guide p svg {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #d0be8c;
+}
+@keyframes keepsake-fit {
+  from {
+    opacity: 0.3;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (min-width: 1000px) {
+  .keepsake-picture-column {
+    max-width: calc((100svh - 430px) * 1.5 + 24px);
+  }
+}
+@media (max-width: 950px) {
+  .keepsake-layout {
+    grid-template-columns: minmax(0, 1fr) 240px;
+    gap: 18px;
+  }
+  .keepsake-tray {
+    padding: 14px;
+  }
+  .keepsake-tray-heading strong {
+    font-size: 15px;
+  }
+  .keepsake-tray-heading .arcade-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.2px;
+  }
+  .keepsake-complete {
+    flex-wrap: wrap;
+  }
+  .keepsake-complete .arcade-button {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .keepsake-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .keepsake-picture-column,
+  .keepsake-tray {
+    width: 100%;
+  }
+  .keepsake-tray {
+    padding: 14px;
+  }
+  .keepsake-tray-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 7px;
+  }
+  .keepsake-tray-heading strong {
+    font-size: 19px;
+  }
+  .keepsake-tray-heading .arcade-eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.6px;
+  }
+  .keepsake-tray-piece {
+    aspect-ratio: 1.15;
+  }
+  .keepsake-frame {
+    padding: 8px;
+    border-radius: 9px;
+  }
+  .keepsake-heading {
+    gap: 15px;
+    margin-bottom: 19px;
+  }
+  .keepsake-heading h2 {
+    font-size: 26px;
+  }
+  .keepsake-heading p {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .keepsake-heading .arcade-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.4px;
+  }
+  .keepsake-progress {
+    width: 80px;
+  }
+  .keepsake-progress strong {
+    font-size: 25px;
+  }
+  .keepsake-progress small {
+    font-size: 12px;
+  }
+  .keepsake-progress > span {
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+  .keepsake-start-note {
+    font-size: 19px;
+    gap: 9px;
+  }
+  .keepsake-start-note svg {
+    width: 22px;
+  }
+  .keepsake-underpicture {
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .keepsake-underpicture .arcade-button {
+    font-size: 10px;
+    padding: 9px 11px;
+  }
+  .keepsake-underpicture > span {
+    font-size: 8px;
+  }
+  .keepsake-message {
+    font-size: 10px;
+    margin: 12px 2px;
+    min-height: 33px;
+  }
+  .keepsake-edges {
+    margin-top: 12px;
+  }
+  .keepsake-game .arcade-actions .arcade-select {
+    font-size: 10px;
+    max-width: 153px;
+    padding: 9px;
+  }
+  .keepsake-game .arcade-actions .arcade-button {
+    font-size: 10px;
+    padding: 9px;
+  }
+  .keepsake-complete {
+    padding: 18px;
+    gap: 12px;
+  }
+  .keepsake-complete h3 {
+    font-size: 22px;
+  }
+  .keepsake-complete .arcade-button {
+    margin-left: 36px;
+  }
+  .keepsake-guide {
+    margin-top: 26px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .keepsake-placed-piece,
+  .keepsake-complete {
+    animation: none;
+  }
+  .keepsake-tray-piece,
+  .keepsake-reference {
+    transition: none;
+  }
+}

@@ -1,0 +1,224 @@
+.custom-game {
+  --cg-ink: #e8f0f1;
+  --cg-muted: #9caebd;
+  color: var(--cg-ink);
+  width: 100%;
+}
+.custom-game button {
+  font: inherit;
+  cursor: pointer;
+}
+.custom-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.custom-toolbar > div:first-child {
+  flex: 1;
+}
+.custom-eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 10px;
+  font-weight: 800;
+  color: #a6c8b4;
+  margin-bottom: 5px;
+}
+.custom-toolbar h2 {
+  margin: 0;
+  color: #f2eedb;
+  font:
+    700 25px Georgia,
+    serif;
+}
+.custom-button {
+  border: 1px solid #3a4d53;
+  border-radius: 6px;
+  background: #1c292e;
+  color: #e2e6dc;
+  padding: 9px 13px;
+  font-size: 12px;
+}
+.custom-button:hover {
+  background: #31413e;
+  border-color: #8baf92;
+}
+.custom-button:focus-visible,
+.build-card:focus-visible,
+.custom-stage canvas:focus-visible {
+  outline: 2px solid #eed391;
+  outline-offset: 3px;
+}
+.custom-button.primary {
+  background: #b9d0a0;
+  color: #15221f;
+  border-color: #cde0b9;
+  font-weight: 700;
+}
+.custom-stage {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #43544f;
+  border-radius: 9px;
+  background: #071016;
+  box-shadow: 0 15px 50px #0003;
+}
+.custom-stage canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  touch-action: none;
+}
+.custom-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #030b14b8;
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+.custom-overlay-panel {
+  width: min(450px, 100%);
+}
+.custom-overlay h3 {
+  color: #f2eedb;
+  font:
+    700 clamp(26px, 4vw, 45px) Georgia,
+    serif;
+  margin: 8px 0 15px;
+}
+.custom-overlay p {
+  color: #c0ced3;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 21px;
+}
+.custom-scoreboard {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #121e24;
+  padding: 12px 16px;
+  font-size: 12px;
+  border: 1px solid #344448;
+  border-top: 0;
+  border-radius: 0 0 6px 6px;
+  flex-wrap: wrap;
+}
+.custom-scoreboard strong {
+  color: #e6d598;
+  font-variant-numeric: tabular-nums;
+}
+.custom-help {
+  color: var(--cg-muted);
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 13px 0 0;
+}
+.custom-help kbd {
+  border: 1px solid #3e5055;
+  background: #1d2b32;
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: #d9e3dd;
+  font-size: 10px;
+}
+.rift-touch-controls {
+  display: none;
+  gap: 6px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+.rift-touch-controls button {
+  min-width: 42px;
+  min-height: 42px;
+  touch-action: none;
+}
+.build-palette {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 12px;
+}
+.build-card {
+  padding: 10px 8px;
+  border: 1px solid #364c57;
+  border-radius: 6px;
+  background: #13232c;
+  color: #d9e1df;
+  text-align: left;
+}
+.build-card:hover,
+.build-card.selected {
+  border-color: #9abfa3;
+  background: #233a3b;
+}
+.build-card:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.build-card strong {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.build-card small {
+  font-size: 10px;
+  color: #a4bbc2;
+}
+.starfall-selection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 38px;
+  font-size: 12px;
+  color: #bbced0;
+}
+.starfall-selection span {
+  flex: 1;
+}
+.custom-notice {
+  color: #e6cfa1;
+  font-size: 12px;
+  min-height: 19px;
+  margin: 8px 0;
+}
+@media (max-width: 680px) {
+  .build-palette {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .custom-scoreboard {
+    gap: 12px;
+    font-size: 11px;
+  }
+  .custom-toolbar h2 {
+    font-size: 22px;
+  }
+  .custom-overlay p {
+    font-size: 11px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  .custom-overlay h3 {
+    margin: 3px 0 8px;
+  }
+  .custom-overlay {
+    padding: 12px;
+  }
+  .custom-stage:has(.custom-overlay) {
+    min-height: 290px;
+  }
+}
+@media (pointer: coarse) {
+  .rift-touch-controls {
+    display: flex;
+  }
+}

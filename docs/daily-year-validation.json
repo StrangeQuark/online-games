@@ -1,0 +1,3658 @@
+{
+  "testedAt": "2026-09-19T06:57:42.532Z",
+  "dates": 365,
+  "uniqueDeliveries": 277,
+  "seconds": 33,
+  "results": [
+    {
+      "date": "2026-09-19",
+      "parcel": {
+        "pushes": 12,
+        "steps": 29
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "parcel": {
+        "pushes": 12,
+        "steps": 35
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2026-09-23",
+      "parcel": {
+        "pushes": 5,
+        "steps": 29
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2026-09-25",
+      "parcel": {
+        "pushes": 5,
+        "steps": 12
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "parcel": {
+        "pushes": 11,
+        "steps": 28
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "parcel": {
+        "pushes": 8,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2026-09-28",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "parcel": {
+        "pushes": 5,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "parcel": {
+        "pushes": 5,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 37
+      }
+    },
+    {
+      "date": "2026-10-02",
+      "parcel": {
+        "pushes": 5,
+        "steps": 12
+      },
+      "lumen": {
+        "turns": 56
+      }
+    },
+    {
+      "date": "2026-10-03",
+      "parcel": {
+        "pushes": 5,
+        "steps": 19
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2026-10-04",
+      "parcel": {
+        "pushes": 9,
+        "steps": 30
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2026-10-05",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "parcel": {
+        "pushes": 11,
+        "steps": 39
+      },
+      "lumen": {
+        "turns": 60
+      }
+    },
+    {
+      "date": "2026-10-07",
+      "parcel": {
+        "pushes": 12,
+        "steps": 29
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "parcel": {
+        "pushes": 6,
+        "steps": 12
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2026-10-10",
+      "parcel": {
+        "pushes": 5,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2026-10-11",
+      "parcel": {
+        "pushes": 5,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2026-10-12",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "parcel": {
+        "pushes": 7,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "parcel": {
+        "pushes": 14,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "parcel": {
+        "pushes": 11,
+        "steps": 29
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "parcel": {
+        "pushes": 5,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2026-10-17",
+      "parcel": {
+        "pushes": 6,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2026-10-18",
+      "parcel": {
+        "pushes": 6,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "parcel": {
+        "pushes": 5,
+        "steps": 18
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "parcel": {
+        "pushes": 10,
+        "steps": 33
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "parcel": {
+        "pushes": 6,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "parcel": {
+        "pushes": 10,
+        "steps": 45
+      },
+      "lumen": {
+        "turns": 35
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2026-10-24",
+      "parcel": {
+        "pushes": 5,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2026-10-25",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 54
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "parcel": {
+        "pushes": 7,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2026-10-27",
+      "parcel": {
+        "pushes": 13,
+        "steps": 42
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2026-10-28",
+      "parcel": {
+        "pushes": 11,
+        "steps": 63
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "parcel": {
+        "pushes": 9,
+        "steps": 28
+      },
+      "lumen": {
+        "turns": 54
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "parcel": {
+        "pushes": 5,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "parcel": {
+        "pushes": 11,
+        "steps": 39
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "parcel": {
+        "pushes": 11,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "parcel": {
+        "pushes": 6,
+        "steps": 11
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "parcel": {
+        "pushes": 7,
+        "steps": 41
+      },
+      "lumen": {
+        "turns": 54
+      }
+    },
+    {
+      "date": "2026-11-05",
+      "parcel": {
+        "pushes": 9,
+        "steps": 38
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2026-11-06",
+      "parcel": {
+        "pushes": 8,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 32
+      }
+    },
+    {
+      "date": "2026-11-07",
+      "parcel": {
+        "pushes": 11,
+        "steps": 28
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "parcel": {
+        "pushes": 10,
+        "steps": 35
+      },
+      "lumen": {
+        "turns": 61
+      }
+    },
+    {
+      "date": "2026-11-09",
+      "parcel": {
+        "pushes": 9,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "parcel": {
+        "pushes": 6,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "parcel": {
+        "pushes": 5,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "parcel": {
+        "pushes": 6,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 58
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "parcel": {
+        "pushes": 7,
+        "steps": 15
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2026-11-14",
+      "parcel": {
+        "pushes": 7,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 34
+      }
+    },
+    {
+      "date": "2026-11-15",
+      "parcel": {
+        "pushes": 12,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2026-11-16",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "parcel": {
+        "pushes": 6,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "parcel": {
+        "pushes": 6,
+        "steps": 17
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 36
+      }
+    },
+    {
+      "date": "2026-11-20",
+      "parcel": {
+        "pushes": 9,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2026-11-21",
+      "parcel": {
+        "pushes": 9,
+        "steps": 28
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2026-11-22",
+      "parcel": {
+        "pushes": 10,
+        "steps": 42
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2026-11-23",
+      "parcel": {
+        "pushes": 6,
+        "steps": 13
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "parcel": {
+        "pushes": 6,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2026-11-25",
+      "parcel": {
+        "pushes": 6,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2026-11-26",
+      "parcel": {
+        "pushes": 6,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 55
+      }
+    },
+    {
+      "date": "2026-11-27",
+      "parcel": {
+        "pushes": 11,
+        "steps": 44
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2026-11-28",
+      "parcel": {
+        "pushes": 9,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2026-11-29",
+      "parcel": {
+        "pushes": 8,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2026-11-30",
+      "parcel": {
+        "pushes": 6,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 37
+      }
+    },
+    {
+      "date": "2026-12-01",
+      "parcel": {
+        "pushes": 9,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 34
+      }
+    },
+    {
+      "date": "2026-12-02",
+      "parcel": {
+        "pushes": 9,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2026-12-03",
+      "parcel": {
+        "pushes": 12,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2026-12-04",
+      "parcel": {
+        "pushes": 6,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2026-12-05",
+      "parcel": {
+        "pushes": 7,
+        "steps": 37
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2026-12-06",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2026-12-07",
+      "parcel": {
+        "pushes": 10,
+        "steps": 35
+      },
+      "lumen": {
+        "turns": 30
+      }
+    },
+    {
+      "date": "2026-12-08",
+      "parcel": {
+        "pushes": 12,
+        "steps": 48
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2026-12-09",
+      "parcel": {
+        "pushes": 9,
+        "steps": 35
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2026-12-10",
+      "parcel": {
+        "pushes": 7,
+        "steps": 31
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2026-12-11",
+      "parcel": {
+        "pushes": 5,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 57
+      }
+    },
+    {
+      "date": "2026-12-12",
+      "parcel": {
+        "pushes": 5,
+        "steps": 29
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2026-12-13",
+      "parcel": {
+        "pushes": 6,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2026-12-14",
+      "parcel": {
+        "pushes": 9,
+        "steps": 30
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2026-12-15",
+      "parcel": {
+        "pushes": 8,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2026-12-16",
+      "parcel": {
+        "pushes": 9,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2026-12-17",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2026-12-18",
+      "parcel": {
+        "pushes": 5,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2026-12-19",
+      "parcel": {
+        "pushes": 6,
+        "steps": 33
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2026-12-20",
+      "parcel": {
+        "pushes": 6,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 55
+      }
+    },
+    {
+      "date": "2026-12-21",
+      "parcel": {
+        "pushes": 12,
+        "steps": 50
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2026-12-22",
+      "parcel": {
+        "pushes": 5,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2026-12-23",
+      "parcel": {
+        "pushes": 12,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2026-12-24",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2026-12-25",
+      "parcel": {
+        "pushes": 5,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2026-12-26",
+      "parcel": {
+        "pushes": 6,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2026-12-27",
+      "parcel": {
+        "pushes": 5,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2026-12-28",
+      "parcel": {
+        "pushes": 12,
+        "steps": 52
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2026-12-29",
+      "parcel": {
+        "pushes": 10,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 55
+      }
+    },
+    {
+      "date": "2026-12-30",
+      "parcel": {
+        "pushes": 9,
+        "steps": 39
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2026-12-31",
+      "parcel": {
+        "pushes": 7,
+        "steps": 33
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-01-01",
+      "parcel": {
+        "pushes": 6,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-01-02",
+      "parcel": {
+        "pushes": 6,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-01-03",
+      "parcel": {
+        "pushes": 14,
+        "steps": 44
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-01-04",
+      "parcel": {
+        "pushes": 8,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-01-05",
+      "parcel": {
+        "pushes": 8,
+        "steps": 31
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-01-06",
+      "parcel": {
+        "pushes": 6,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2027-01-07",
+      "parcel": {
+        "pushes": 5,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-01-08",
+      "parcel": {
+        "pushes": 6,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2027-01-09",
+      "parcel": {
+        "pushes": 5,
+        "steps": 18
+      },
+      "lumen": {
+        "turns": 54
+      }
+    },
+    {
+      "date": "2027-01-10",
+      "parcel": {
+        "pushes": 10,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-01-11",
+      "parcel": {
+        "pushes": 9,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-01-12",
+      "parcel": {
+        "pushes": 15,
+        "steps": 67
+      },
+      "lumen": {
+        "turns": 36
+      }
+    },
+    {
+      "date": "2027-01-13",
+      "parcel": {
+        "pushes": 6,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-01-14",
+      "parcel": {
+        "pushes": 5,
+        "steps": 45
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-01-15",
+      "parcel": {
+        "pushes": 7,
+        "steps": 30
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-01-16",
+      "parcel": {
+        "pushes": 5,
+        "steps": 18
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-01-17",
+      "parcel": {
+        "pushes": 9,
+        "steps": 17
+      },
+      "lumen": {
+        "turns": 36
+      }
+    },
+    {
+      "date": "2027-01-18",
+      "parcel": {
+        "pushes": 10,
+        "steps": 33
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2027-01-19",
+      "parcel": {
+        "pushes": 9,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 37
+      }
+    },
+    {
+      "date": "2027-01-20",
+      "parcel": {
+        "pushes": 6,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-01-21",
+      "parcel": {
+        "pushes": 5,
+        "steps": 17
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2027-01-22",
+      "parcel": {
+        "pushes": 7,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-01-23",
+      "parcel": {
+        "pushes": 8,
+        "steps": 34
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-01-24",
+      "parcel": {
+        "pushes": 12,
+        "steps": 40
+      },
+      "lumen": {
+        "turns": 60
+      }
+    },
+    {
+      "date": "2027-01-25",
+      "parcel": {
+        "pushes": 10,
+        "steps": 31
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-01-26",
+      "parcel": {
+        "pushes": 8,
+        "steps": 31
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-01-27",
+      "parcel": {
+        "pushes": 5,
+        "steps": 13
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2027-01-28",
+      "parcel": {
+        "pushes": 5,
+        "steps": 18
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-01-29",
+      "parcel": {
+        "pushes": 7,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-01-30",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-01-31",
+      "parcel": {
+        "pushes": 8,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 26
+      }
+    },
+    {
+      "date": "2027-02-01",
+      "parcel": {
+        "pushes": 5,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-02-02",
+      "parcel": {
+        "pushes": 9,
+        "steps": 40
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-02-03",
+      "parcel": {
+        "pushes": 12,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 60
+      }
+    },
+    {
+      "date": "2027-02-04",
+      "parcel": {
+        "pushes": 8,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-02-05",
+      "parcel": {
+        "pushes": 11,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-02-06",
+      "parcel": {
+        "pushes": 12,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-02-07",
+      "parcel": {
+        "pushes": 6,
+        "steps": 10
+      },
+      "lumen": {
+        "turns": 54
+      }
+    },
+    {
+      "date": "2027-02-08",
+      "parcel": {
+        "pushes": 5,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-02-09",
+      "parcel": {
+        "pushes": 9,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-02-10",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-02-11",
+      "parcel": {
+        "pushes": 12,
+        "steps": 53
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-02-12",
+      "parcel": {
+        "pushes": 10,
+        "steps": 34
+      },
+      "lumen": {
+        "turns": 54
+      }
+    },
+    {
+      "date": "2027-02-13",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-02-14",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-02-15",
+      "parcel": {
+        "pushes": 6,
+        "steps": 45
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-02-16",
+      "parcel": {
+        "pushes": 6,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 64
+      }
+    },
+    {
+      "date": "2027-02-17",
+      "parcel": {
+        "pushes": 12,
+        "steps": 52
+      },
+      "lumen": {
+        "turns": 34
+      }
+    },
+    {
+      "date": "2027-02-18",
+      "parcel": {
+        "pushes": 10,
+        "steps": 44
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-02-19",
+      "parcel": {
+        "pushes": 6,
+        "steps": 18
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-02-20",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-02-21",
+      "parcel": {
+        "pushes": 6,
+        "steps": 13
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-02-22",
+      "parcel": {
+        "pushes": 7,
+        "steps": 33
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-02-23",
+      "parcel": {
+        "pushes": 7,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-02-24",
+      "parcel": {
+        "pushes": 12,
+        "steps": 52
+      },
+      "lumen": {
+        "turns": 34
+      }
+    },
+    {
+      "date": "2027-02-25",
+      "parcel": {
+        "pushes": 10,
+        "steps": 39
+      },
+      "lumen": {
+        "turns": 56
+      }
+    },
+    {
+      "date": "2027-02-26",
+      "parcel": {
+        "pushes": 6,
+        "steps": 19
+      },
+      "lumen": {
+        "turns": 32
+      }
+    },
+    {
+      "date": "2027-02-27",
+      "parcel": {
+        "pushes": 9,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2027-02-28",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-03-01",
+      "parcel": {
+        "pushes": 5,
+        "steps": 9
+      },
+      "lumen": {
+        "turns": 28
+      }
+    },
+    {
+      "date": "2027-03-02",
+      "parcel": {
+        "pushes": 6,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 57
+      }
+    },
+    {
+      "date": "2027-03-03",
+      "parcel": {
+        "pushes": 10,
+        "steps": 36
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-03-04",
+      "parcel": {
+        "pushes": 8,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-03-05",
+      "parcel": {
+        "pushes": 12,
+        "steps": 46
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2027-03-06",
+      "parcel": {
+        "pushes": 11,
+        "steps": 42
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-03-07",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 34
+      }
+    },
+    {
+      "date": "2027-03-08",
+      "parcel": {
+        "pushes": 6,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 56
+      }
+    },
+    {
+      "date": "2027-03-09",
+      "parcel": {
+        "pushes": 6,
+        "steps": 19
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-03-10",
+      "parcel": {
+        "pushes": 5,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-03-11",
+      "parcel": {
+        "pushes": 9,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-03-12",
+      "parcel": {
+        "pushes": 8,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-03-13",
+      "parcel": {
+        "pushes": 11,
+        "steps": 42
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-03-14",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-03-15",
+      "parcel": {
+        "pushes": 5,
+        "steps": 15
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2027-03-16",
+      "parcel": {
+        "pushes": 8,
+        "steps": 36
+      },
+      "lumen": {
+        "turns": 37
+      }
+    },
+    {
+      "date": "2027-03-17",
+      "parcel": {
+        "pushes": 5,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-03-18",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 59
+      }
+    },
+    {
+      "date": "2027-03-19",
+      "parcel": {
+        "pushes": 9,
+        "steps": 35
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-03-20",
+      "parcel": {
+        "pushes": 13,
+        "steps": 41
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-03-21",
+      "parcel": {
+        "pushes": 7,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-03-22",
+      "parcel": {
+        "pushes": 6,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-03-23",
+      "parcel": {
+        "pushes": 6,
+        "steps": 29
+      },
+      "lumen": {
+        "turns": 31
+      }
+    },
+    {
+      "date": "2027-03-24",
+      "parcel": {
+        "pushes": 5,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 63
+      }
+    },
+    {
+      "date": "2027-03-25",
+      "parcel": {
+        "pushes": 5,
+        "steps": 11
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-03-26",
+      "parcel": {
+        "pushes": 9,
+        "steps": 33
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-03-27",
+      "parcel": {
+        "pushes": 10,
+        "steps": 31
+      },
+      "lumen": {
+        "turns": 57
+      }
+    },
+    {
+      "date": "2027-03-28",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-03-29",
+      "parcel": {
+        "pushes": 6,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-03-30",
+      "parcel": {
+        "pushes": 7,
+        "steps": 35
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-03-31",
+      "parcel": {
+        "pushes": 11,
+        "steps": 50
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-04-01",
+      "parcel": {
+        "pushes": 9,
+        "steps": 34
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2027-04-02",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-04-03",
+      "parcel": {
+        "pushes": 5,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-04-04",
+      "parcel": {
+        "pushes": 9,
+        "steps": 40
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-04-05",
+      "parcel": {
+        "pushes": 9,
+        "steps": 31
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-04-06",
+      "parcel": {
+        "pushes": 7,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-04-07",
+      "parcel": {
+        "pushes": 10,
+        "steps": 33
+      },
+      "lumen": {
+        "turns": 54
+      }
+    },
+    {
+      "date": "2027-04-08",
+      "parcel": {
+        "pushes": 9,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 37
+      }
+    },
+    {
+      "date": "2027-04-09",
+      "parcel": {
+        "pushes": 5,
+        "steps": 8
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-04-10",
+      "parcel": {
+        "pushes": 7,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-04-11",
+      "parcel": {
+        "pushes": 7,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-04-12",
+      "parcel": {
+        "pushes": 9,
+        "steps": 34
+      },
+      "lumen": {
+        "turns": 32
+      }
+    },
+    {
+      "date": "2027-04-13",
+      "parcel": {
+        "pushes": 7,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 54
+      }
+    },
+    {
+      "date": "2027-04-14",
+      "parcel": {
+        "pushes": 11,
+        "steps": 30
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-04-15",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-04-16",
+      "parcel": {
+        "pushes": 5,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-04-17",
+      "parcel": {
+        "pushes": 7,
+        "steps": 41
+      },
+      "lumen": {
+        "turns": 34
+      }
+    },
+    {
+      "date": "2027-04-18",
+      "parcel": {
+        "pushes": 6,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-04-19",
+      "parcel": {
+        "pushes": 12,
+        "steps": 46
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-04-20",
+      "parcel": {
+        "pushes": 7,
+        "steps": 15
+      },
+      "lumen": {
+        "turns": 62
+      }
+    },
+    {
+      "date": "2027-04-21",
+      "parcel": {
+        "pushes": 8,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2027-04-22",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-04-23",
+      "parcel": {
+        "pushes": 5,
+        "steps": 15
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-04-24",
+      "parcel": {
+        "pushes": 5,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-04-25",
+      "parcel": {
+        "pushes": 9,
+        "steps": 30
+      },
+      "lumen": {
+        "turns": 35
+      }
+    },
+    {
+      "date": "2027-04-26",
+      "parcel": {
+        "pushes": 7,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 54
+      }
+    },
+    {
+      "date": "2027-04-27",
+      "parcel": {
+        "pushes": 11,
+        "steps": 45
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-04-28",
+      "parcel": {
+        "pushes": 9,
+        "steps": 40
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-04-29",
+      "parcel": {
+        "pushes": 12,
+        "steps": 59
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-04-30",
+      "parcel": {
+        "pushes": 5,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 35
+      }
+    },
+    {
+      "date": "2027-05-01",
+      "parcel": {
+        "pushes": 7,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-05-02",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-05-03",
+      "parcel": {
+        "pushes": 5,
+        "steps": 15
+      },
+      "lumen": {
+        "turns": 59
+      }
+    },
+    {
+      "date": "2027-05-04",
+      "parcel": {
+        "pushes": 5,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2027-05-05",
+      "parcel": {
+        "pushes": 6,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-05-06",
+      "parcel": {
+        "pushes": 8,
+        "steps": 15
+      },
+      "lumen": {
+        "turns": 57
+      }
+    },
+    {
+      "date": "2027-05-07",
+      "parcel": {
+        "pushes": 7,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-05-08",
+      "parcel": {
+        "pushes": 12,
+        "steps": 42
+      },
+      "lumen": {
+        "turns": 60
+      }
+    },
+    {
+      "date": "2027-05-09",
+      "parcel": {
+        "pushes": 12,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 36
+      }
+    },
+    {
+      "date": "2027-05-10",
+      "parcel": {
+        "pushes": 6,
+        "steps": 19
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-05-11",
+      "parcel": {
+        "pushes": 5,
+        "steps": 19
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-05-12",
+      "parcel": {
+        "pushes": 8,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-05-13",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-05-14",
+      "parcel": {
+        "pushes": 11,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-05-15",
+      "parcel": {
+        "pushes": 12,
+        "steps": 33
+      },
+      "lumen": {
+        "turns": 64
+      }
+    },
+    {
+      "date": "2027-05-16",
+      "parcel": {
+        "pushes": 12,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 33
+      }
+    },
+    {
+      "date": "2027-05-17",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2027-05-18",
+      "parcel": {
+        "pushes": 5,
+        "steps": 35
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-05-19",
+      "parcel": {
+        "pushes": 11,
+        "steps": 50
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-05-20",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-05-21",
+      "parcel": {
+        "pushes": 11,
+        "steps": 28
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2027-05-22",
+      "parcel": {
+        "pushes": 10,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2027-05-23",
+      "parcel": {
+        "pushes": 9,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2027-05-24",
+      "parcel": {
+        "pushes": 5,
+        "steps": 12
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-05-25",
+      "parcel": {
+        "pushes": 5,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-05-26",
+      "parcel": {
+        "pushes": 5,
+        "steps": 28
+      },
+      "lumen": {
+        "turns": 54
+      }
+    },
+    {
+      "date": "2027-05-27",
+      "parcel": {
+        "pushes": 6,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-05-28",
+      "parcel": {
+        "pushes": 8,
+        "steps": 12
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-05-29",
+      "parcel": {
+        "pushes": 8,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-05-30",
+      "parcel": {
+        "pushes": 10,
+        "steps": 45
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-05-31",
+      "parcel": {
+        "pushes": 6,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-06-01",
+      "parcel": {
+        "pushes": 7,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2027-06-02",
+      "parcel": {
+        "pushes": 8,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2027-06-03",
+      "parcel": {
+        "pushes": 15,
+        "steps": 51
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-06-04",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-06-05",
+      "parcel": {
+        "pushes": 5,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 58
+      }
+    },
+    {
+      "date": "2027-06-06",
+      "parcel": {
+        "pushes": 5,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-06-07",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 56
+      }
+    },
+    {
+      "date": "2027-06-08",
+      "parcel": {
+        "pushes": 6,
+        "steps": 19
+      },
+      "lumen": {
+        "turns": 37
+      }
+    },
+    {
+      "date": "2027-06-09",
+      "parcel": {
+        "pushes": 12,
+        "steps": 35
+      },
+      "lumen": {
+        "turns": 37
+      }
+    },
+    {
+      "date": "2027-06-10",
+      "parcel": {
+        "pushes": 6,
+        "steps": 31
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-06-11",
+      "parcel": {
+        "pushes": 6,
+        "steps": 19
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-06-12",
+      "parcel": {
+        "pushes": 6,
+        "steps": 29
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-06-13",
+      "parcel": {
+        "pushes": 6,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-06-14",
+      "parcel": {
+        "pushes": 9,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2027-06-15",
+      "parcel": {
+        "pushes": 11,
+        "steps": 42
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-06-16",
+      "parcel": {
+        "pushes": 8,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2027-06-17",
+      "parcel": {
+        "pushes": 7,
+        "steps": 29
+      },
+      "lumen": {
+        "turns": 56
+      }
+    },
+    {
+      "date": "2027-06-18",
+      "parcel": {
+        "pushes": 5,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-06-19",
+      "parcel": {
+        "pushes": 8,
+        "steps": 43
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-06-20",
+      "parcel": {
+        "pushes": 5,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-06-21",
+      "parcel": {
+        "pushes": 10,
+        "steps": 52
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-06-22",
+      "parcel": {
+        "pushes": 11,
+        "steps": 38
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-06-23",
+      "parcel": {
+        "pushes": 9,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-06-24",
+      "parcel": {
+        "pushes": 8,
+        "steps": 15
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2027-06-25",
+      "parcel": {
+        "pushes": 6,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 56
+      }
+    },
+    {
+      "date": "2027-06-26",
+      "parcel": {
+        "pushes": 5,
+        "steps": 31
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-06-27",
+      "parcel": {
+        "pushes": 9,
+        "steps": 40
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-06-28",
+      "parcel": {
+        "pushes": 6,
+        "steps": 9
+      },
+      "lumen": {
+        "turns": 56
+      }
+    },
+    {
+      "date": "2027-06-29",
+      "parcel": {
+        "pushes": 12,
+        "steps": 38
+      },
+      "lumen": {
+        "turns": 35
+      }
+    },
+    {
+      "date": "2027-06-30",
+      "parcel": {
+        "pushes": 11,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-07-01",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-07-02",
+      "parcel": {
+        "pushes": 11,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-07-03",
+      "parcel": {
+        "pushes": 10,
+        "steps": 42
+      },
+      "lumen": {
+        "turns": 36
+      }
+    },
+    {
+      "date": "2027-07-04",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-07-05",
+      "parcel": {
+        "pushes": 6,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-07-06",
+      "parcel": {
+        "pushes": 7,
+        "steps": 35
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-07-07",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-07-08",
+      "parcel": {
+        "pushes": 6,
+        "steps": 13
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-07-09",
+      "parcel": {
+        "pushes": 7,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-07-10",
+      "parcel": {
+        "pushes": 7,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 58
+      }
+    },
+    {
+      "date": "2027-07-11",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 35
+      }
+    },
+    {
+      "date": "2027-07-12",
+      "parcel": {
+        "pushes": 5,
+        "steps": 12
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2027-07-13",
+      "parcel": {
+        "pushes": 7,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-07-14",
+      "parcel": {
+        "pushes": 5,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 36
+      }
+    },
+    {
+      "date": "2027-07-15",
+      "parcel": {
+        "pushes": 10,
+        "steps": 48
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-07-16",
+      "parcel": {
+        "pushes": 7,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2027-07-17",
+      "parcel": {
+        "pushes": 8,
+        "steps": 19
+      },
+      "lumen": {
+        "turns": 35
+      }
+    },
+    {
+      "date": "2027-07-18",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-07-19",
+      "parcel": {
+        "pushes": 6,
+        "steps": 26
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-07-20",
+      "parcel": {
+        "pushes": 5,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-07-21",
+      "parcel": {
+        "pushes": 6,
+        "steps": 18
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-07-22",
+      "parcel": {
+        "pushes": 12,
+        "steps": 52
+      },
+      "lumen": {
+        "turns": 35
+      }
+    },
+    {
+      "date": "2027-07-23",
+      "parcel": {
+        "pushes": 10,
+        "steps": 39
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-07-24",
+      "parcel": {
+        "pushes": 11,
+        "steps": 42
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-07-25",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-07-26",
+      "parcel": {
+        "pushes": 6,
+        "steps": 18
+      },
+      "lumen": {
+        "turns": 36
+      }
+    },
+    {
+      "date": "2027-07-27",
+      "parcel": {
+        "pushes": 6,
+        "steps": 31
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-07-28",
+      "parcel": {
+        "pushes": 6,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-07-29",
+      "parcel": {
+        "pushes": 10,
+        "steps": 43
+      },
+      "lumen": {
+        "turns": 33
+      }
+    },
+    {
+      "date": "2027-07-30",
+      "parcel": {
+        "pushes": 10,
+        "steps": 33
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-07-31",
+      "parcel": {
+        "pushes": 9,
+        "steps": 27
+      },
+      "lumen": {
+        "turns": 37
+      }
+    },
+    {
+      "date": "2027-08-01",
+      "parcel": {
+        "pushes": 5,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-08-02",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-08-03",
+      "parcel": {
+        "pushes": 5,
+        "steps": 11
+      },
+      "lumen": {
+        "turns": 52
+      }
+    },
+    {
+      "date": "2027-08-04",
+      "parcel": {
+        "pushes": 12,
+        "steps": 42
+      },
+      "lumen": {
+        "turns": 46
+      }
+    },
+    {
+      "date": "2027-08-05",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-08-06",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 34
+      }
+    },
+    {
+      "date": "2027-08-07",
+      "parcel": {
+        "pushes": 5,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-08-08",
+      "parcel": {
+        "pushes": 5,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-08-09",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-08-10",
+      "parcel": {
+        "pushes": 7,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-08-11",
+      "parcel": {
+        "pushes": 9,
+        "steps": 33
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-08-12",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-08-13",
+      "parcel": {
+        "pushes": 5,
+        "steps": 11
+      },
+      "lumen": {
+        "turns": 36
+      }
+    },
+    {
+      "date": "2027-08-14",
+      "parcel": {
+        "pushes": 5,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 30
+      }
+    },
+    {
+      "date": "2027-08-15",
+      "parcel": {
+        "pushes": 6,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 53
+      }
+    },
+    {
+      "date": "2027-08-16",
+      "parcel": {
+        "pushes": 12,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-08-17",
+      "parcel": {
+        "pushes": 8,
+        "steps": 22
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-08-18",
+      "parcel": {
+        "pushes": 11,
+        "steps": 43
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-08-19",
+      "parcel": {
+        "pushes": 7,
+        "steps": 13
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-08-20",
+      "parcel": {
+        "pushes": 5,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-08-21",
+      "parcel": {
+        "pushes": 6,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-08-22",
+      "parcel": {
+        "pushes": 9,
+        "steps": 42
+      },
+      "lumen": {
+        "turns": 48
+      }
+    },
+    {
+      "date": "2027-08-23",
+      "parcel": {
+        "pushes": 8,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-08-24",
+      "parcel": {
+        "pushes": 8,
+        "steps": 41
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-08-25",
+      "parcel": {
+        "pushes": 8,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 27
+      }
+    },
+    {
+      "date": "2027-08-26",
+      "parcel": {
+        "pushes": 5,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 50
+      }
+    },
+    {
+      "date": "2027-08-27",
+      "parcel": {
+        "pushes": 6,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 36
+      }
+    },
+    {
+      "date": "2027-08-28",
+      "parcel": {
+        "pushes": 9,
+        "steps": 36
+      },
+      "lumen": {
+        "turns": 37
+      }
+    },
+    {
+      "date": "2027-08-29",
+      "parcel": {
+        "pushes": 6,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 45
+      }
+    },
+    {
+      "date": "2027-08-30",
+      "parcel": {
+        "pushes": 5,
+        "steps": 11
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-08-31",
+      "parcel": {
+        "pushes": 6,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-09-01",
+      "parcel": {
+        "pushes": 5,
+        "steps": 37
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-09-02",
+      "parcel": {
+        "pushes": 5,
+        "steps": 24
+      },
+      "lumen": {
+        "turns": 42
+      }
+    },
+    {
+      "date": "2027-09-03",
+      "parcel": {
+        "pushes": 11,
+        "steps": 30
+      },
+      "lumen": {
+        "turns": 41
+      }
+    },
+    {
+      "date": "2027-09-04",
+      "parcel": {
+        "pushes": 8,
+        "steps": 23
+      },
+      "lumen": {
+        "turns": 38
+      }
+    },
+    {
+      "date": "2027-09-05",
+      "parcel": {
+        "pushes": 13,
+        "steps": 41
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-09-06",
+      "parcel": {
+        "pushes": 9,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 59
+      }
+    },
+    {
+      "date": "2027-09-07",
+      "parcel": {
+        "pushes": 6,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 43
+      }
+    },
+    {
+      "date": "2027-09-08",
+      "parcel": {
+        "pushes": 6,
+        "steps": 25
+      },
+      "lumen": {
+        "turns": 40
+      }
+    },
+    {
+      "date": "2027-09-09",
+      "parcel": {
+        "pushes": 6,
+        "steps": 18
+      },
+      "lumen": {
+        "turns": 49
+      }
+    },
+    {
+      "date": "2027-09-10",
+      "parcel": {
+        "pushes": 5,
+        "steps": 7
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-09-11",
+      "parcel": {
+        "pushes": 13,
+        "steps": 47
+      },
+      "lumen": {
+        "turns": 51
+      }
+    },
+    {
+      "date": "2027-09-12",
+      "parcel": {
+        "pushes": 7,
+        "steps": 14
+      },
+      "lumen": {
+        "turns": 47
+      }
+    },
+    {
+      "date": "2027-09-13",
+      "parcel": {
+        "pushes": 9,
+        "steps": 32
+      },
+      "lumen": {
+        "turns": 39
+      }
+    },
+    {
+      "date": "2027-09-14",
+      "parcel": {
+        "pushes": 6,
+        "steps": 11
+      },
+      "lumen": {
+        "turns": 60
+      }
+    },
+    {
+      "date": "2027-09-15",
+      "parcel": {
+        "pushes": 5,
+        "steps": 20
+      },
+      "lumen": {
+        "turns": 44
+      }
+    },
+    {
+      "date": "2027-09-16",
+      "parcel": {
+        "pushes": 6,
+        "steps": 16
+      },
+      "lumen": {
+        "turns": 33
+      }
+    },
+    {
+      "date": "2027-09-17",
+      "parcel": {
+        "pushes": 9,
+        "steps": 21
+      },
+      "lumen": {
+        "turns": 36
+      }
+    },
+    {
+      "date": "2027-09-18",
+      "parcel": {
+        "pushes": 14,
+        "steps": 38
+      },
+      "lumen": {
+        "turns": 53
+      }
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+.petal-game {
+  --arcade-accent: #eeb6a5;
+  max-width: 1050px;
+}
+.petal-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 650px) 270px;
+  gap: 28px;
+  justify-content: center;
+  align-items: start;
+}
+.petal-board-column {
+  width: 100%;
+  max-width: 610px;
+  margin: auto;
+}
+.petal-statbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px 3px 20px;
+}
+.petal-statbar > div {
+  display: grid;
+  gap: 7px;
+}
+.petal-statbar span {
+  font-size: 8px;
+  letter-spacing: 1.4px;
+  color: #9db4a6;
+}
+.petal-statbar strong {
+  font:
+    23px Georgia,
+    serif;
+  color: #e8debd;
+  font-variant-numeric: tabular-nums;
+}
+.petal-statbar > div:first-child strong {
+  font-size: 20px;
+}
+.petal-statbar .petal-low-moves {
+  color: #f0aaa0;
+}
+.petal-board-frame {
+  position: relative;
+  isolation: isolate;
+  border-radius: 14px;
+  padding: 14px;
+  background: linear-gradient(
+    135deg,
+    #63715b,
+    #293e36 28%,
+    #435b49 75%,
+    #778063
+  );
+  border: 1px solid #8c9b7177;
+  box-shadow:
+    0 20px 65px #0005,
+    inset 0 0 0 5px #162e2c66;
+  overflow: hidden;
+}
+.petal-board {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  aspect-ratio: 1;
+  background: #183329;
+  border-radius: 7px;
+  overflow: hidden;
+  border: 1px solid #182c25;
+  touch-action: none;
+}
+.petal-cell {
+  aspect-ratio: 1;
+  border: 1px solid #94b58b13;
+  background: radial-gradient(ellipse at 50% 20%, #37523e, #263e33);
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition:
+    background 0.18s,
+    box-shadow 0.18s;
+}
+.petal-cell:nth-child(2n) {
+  background: radial-gradient(ellipse at 50% 20%, #3c5842, #2c4437);
+}
+.petal-cell:hover {
+  box-shadow: inset 0 0 0 2px #b2c58d66;
+}
+.petal-cell.selected {
+  background: #6f7751;
+  box-shadow: inset 0 0 0 3px #f6dea2;
+}
+.petal-cell:focus-visible {
+  outline: 3px solid #f1d48e;
+  outline-offset: -3px;
+}
+.petal-cell.hinted {
+  box-shadow: inset 0 0 0 3px #d1e4a1;
+  animation: petal-hint 1.2s ease-in-out infinite;
+}
+.petal-pieces {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+}
+.petal-piece {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+  padding: 5px;
+  transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.4, 1);
+  will-change: transform;
+}
+.petal-flower {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 3px 2px #07180a66);
+  transition: transform 0.15s;
+  overflow: visible;
+}
+.petal-lift .petal-flower {
+  transform: scale(1.12);
+  filter: drop-shadow(0 3px 7px #e9d79477);
+}
+.petal-pop .petal-flower {
+  animation: petal-bloom 0.2s ease-out forwards;
+}
+.special-flower {
+  filter: drop-shadow(0 0 5px #f7e8b077) drop-shadow(0 3px 2px #07180a66);
+}
+@keyframes petal-bloom {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+  }
+  100% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+@keyframes petal-hint {
+  50% {
+    box-shadow:
+      inset 0 0 0 4px #f1e6ac,
+      0 0 10px #c1d79c;
+  }
+}
+.petal-cascade-label {
+  position: absolute;
+  top: 43%;
+  left: 5%;
+  right: 5%;
+  z-index: 4;
+  pointer-events: none;
+  text-align: center;
+  font:
+    700 clamp(12px, 2vw, 21px) "Manrope",
+    sans-serif;
+  letter-spacing: 2px;
+  color: #fff2ce;
+  text-shadow:
+    0 2px 9px #14251f,
+    0 0 15px #14251f;
+  background: #142c2588;
+  border-radius: 30px;
+  padding: 14px 8px;
+  animation: petal-label 0.35s ease-out;
+}
+@keyframes petal-label {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.petal-game .arcade-overlay {
+  background: #102c24e8;
+  border-radius: 13px;
+}
+.petal-game .petal-intro {
+  background:
+    linear-gradient(0deg, #10291df7, #122b23bf),
+    url("/assets/petal.webp") center/cover;
+  backdrop-filter: blur(3px);
+}
+.petal-wordmark {
+  font:
+    italic clamp(60px, 8vw, 90px) Georgia,
+    serif;
+  line-height: 1.1;
+  color: #f7dcc0;
+  letter-spacing: -4px;
+}
+.petal-wordmark > span {
+  display: inline-block;
+  font-size: 0.45em;
+  vertical-align: top;
+  margin: 0 0 0 8px;
+  color: #e8b698;
+  transform: rotate(-15deg);
+}
+.petal-zen-button {
+  display: flex;
+  margin: 10px auto 0;
+  background: #203c30cc;
+}
+.petal-game .arcade-overlay-card p {
+  color: #baceb6;
+}
+.petal-game .arcade-eyebrow {
+  color: #abc1a2;
+}
+.petal-game .arcade-overlay-note {
+  color: #99b69f;
+}
+.petal-stars {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  color: #e5c17b;
+}
+.petal-game .arcade-final-score {
+  font-size: 44px;
+  margin: 15px 0;
+}
+.petal-board-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-top: 15px;
+}
+.petal-board-actions > p {
+  flex: 1;
+  min-height: 32px;
+  margin: 0;
+  color: #9fb5a5;
+  font-size: 10px;
+  line-height: 1.7;
+}
+.petal-sidebar {
+  padding-top: 69px;
+}
+.petal-objectives {
+  padding: 21px 18px;
+  background: linear-gradient(135deg, #294036, #1d322c);
+  border: 1px solid #6b886455;
+  border-radius: 9px;
+}
+.petal-sidebar h3 {
+  font:
+    21px Georgia,
+    serif;
+  color: #e6debb;
+  margin: 10px 0 19px;
+}
+.petal-goal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.petal-goal > .petal-flower {
+  width: 35px;
+  height: 35px;
+  flex: none;
+}
+.petal-goal > span {
+  flex: 1;
+  min-width: 0;
+}
+.petal-goal strong {
+  display: block;
+  color: #bfcfba;
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.petal-goal progress {
+  display: block;
+  width: 100%;
+  height: 5px;
+  border: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #12281f;
+  accent-color: #b7cf98;
+}
+.petal-goal progress::-webkit-progress-bar {
+  background: #12281f;
+  border-radius: 5px;
+}
+.petal-goal progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #6fa689, #c1d693);
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+.petal-goal b {
+  font:
+    18px Georgia,
+    serif;
+  color: #e5dcae;
+}
+.petal-goal small {
+  font:
+    10px "DM Sans",
+    sans-serif;
+  color: #8eaa96;
+}
+.petal-goal.done {
+  opacity: 0.6;
+}
+.petal-goal.done b {
+  color: #c2dd9c;
+}
+.petal-sidebar p {
+  color: #a0b6a4;
+  font-size: 11px;
+  line-height: 1.9;
+}
+.petal-field-guide {
+  padding: 26px 5px 16px;
+}
+.petal-field-guide h3 {
+  margin-bottom: 13px;
+}
+.petal-field-guide b {
+  color: #d4ceb0;
+  font-weight: 500;
+}
+.petal-chapters > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-top: 12px;
+}
+.petal-chapters button {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  background: #233d31;
+  border: 1px solid #78976c44;
+  border-radius: 6px;
+  padding: 9px;
+  color: #b9cbb1;
+  cursor: pointer;
+}
+.petal-chapters button[aria-current] {
+  background: #54664a;
+  border-color: #b8c190;
+  color: #f3dfb2;
+}
+.petal-chapters button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.petal-chapters small {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #e2c384;
+}
+@media (min-width: 801px) {
+  .petal-board-column {
+    max-width: min(610px, max(410px, calc(100svh - 470px)));
+  }
+  .focus-game .petal-board-column {
+    max-width: 650px;
+  }
+}
+@media (max-width: 800px) {
+  .petal-layout {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .petal-sidebar {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .petal-field-guide {
+    grid-column: 1/-1;
+    order: 3;
+    padding: 0 3px;
+  }
+  .petal-objectives {
+    padding: 14px 11px;
+  }
+  .petal-sidebar h3 {
+    font-size: 18px;
+    margin: 7px 0 15px;
+  }
+  .petal-sidebar .arcade-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .petal-goal {
+    gap: 5px;
+  }
+  .petal-goal > .petal-flower {
+    width: 27px;
+    height: 27px;
+  }
+  .petal-goal strong {
+    font-size: 8px;
+  }
+  .petal-goal b {
+    font-size: 15px;
+  }
+  .petal-chapters > div {
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .petal-chapters button {
+    padding: 8px 3px;
+    font-size: 11px;
+  }
+  .petal-statbar {
+    gap: 10px;
+    padding: 12px 2px 16px;
+  }
+  .petal-statbar span {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .petal-statbar strong {
+    font-size: 20px;
+  }
+  .petal-statbar > div:first-child strong {
+    font-size: 17px;
+  }
+  .petal-board-frame {
+    padding: 8px;
+  }
+  .petal-piece {
+    padding: 3px;
+  }
+  .petal-board-actions {
+    align-items: start;
+  }
+  .petal-board-actions .arcade-button {
+    padding: 9px;
+  }
+  .petal-game .arcade-overlay-card > svg {
+    display: none;
+  }
+  .petal-wordmark {
+    font-size: 62px;
+  }
+  .petal-game .arcade-overlay-card > .arcade-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.2px;
+    margin: 5px 0 10px;
+  }
+  .petal-game .arcade-overlay-note {
+    font-size: 8px;
+    margin-top: 12px;
+  }
+  .petal-game .arcade-overlay-card > .primary {
+    padding: 11px 20px;
+    font-size: 12px;
+  }
+  .petal-game .arcade-final-score {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  .petal-game .arcade-overlay-card h3 {
+    font-size: 25px;
+  }
+}
+
+.petal-mobile-goals {
+  display: none;
+}
+@media (max-width: 800px) {
+  .petal-mobile-goals {
+    display: flex;
+    gap: 10px;
+    padding: 0 3px 13px;
+  }
+  .petal-mobile-goals > div {
+    display: grid;
+    grid-template-columns: 26px auto;
+    align-items: center;
+    column-gap: 5px;
+    min-width: 0;
+    flex: 1;
+  }
+  .petal-mobile-goals .petal-flower {
+    width: 26px;
+    height: 26px;
+    grid-row: span 2;
+  }
+  .petal-mobile-goals span {
+    font:
+      15px Georgia,
+      serif;
+    color: #e4d8af;
+  }
+  .petal-mobile-goals small {
+    font:
+      9px "DM Sans",
+      sans-serif;
+    color: #94af9a;
+  }
+  .petal-mobile-goals progress {
+    width: 100%;
+    height: 3px;
+    accent-color: #a6c58c;
+  }
+  .petal-mobile-goals .done {
+    opacity: 0.5;
+  }
+  .petal-sidebar .petal-objectives {
+    display: none;
+  }
+  .petal-sidebar {
+    grid-template-columns: 1fr;
+  }
+  .petal-chapters > div {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}

@@ -1,0 +1,804 @@
+.driftline-game {
+  --arcade-accent: #e8c698;
+}
+.city-stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid #84968b66;
+  border-radius: 12px;
+  background: #a8b5b4;
+}
+.city-stage > canvas {
+  display: block;
+  width: 100%;
+  height: clamp(490px, 65svh, 800px);
+  outline-offset: -4px;
+  scroll-margin-top: 8px;
+  touch-action: none;
+}
+.focus-game .city-stage > canvas {
+  height: calc(100svh - 170px);
+  min-height: 440px;
+}
+.city-welcome {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(28px, 5vw, 75px);
+  gap: 25px;
+  background: linear-gradient(
+    90deg,
+    #122e35f5 0%,
+    #183740c9 43%,
+    #24434d16 100%
+  );
+  color: #f4e8cf;
+}
+.city-kicker,
+.city-welcome-stamp > span {
+  font:
+    600 9px "DM Sans",
+    sans-serif;
+  letter-spacing: 2px;
+  color: #dfcba7;
+}
+.city-welcome-copy {
+  max-width: 470px;
+}
+.city-welcome-copy h3 {
+  font:
+    italic clamp(40px, 4.7vw, 69px)/1.06 Georgia,
+    serif;
+  letter-spacing: -2px;
+  margin: 23px 0;
+  color: #f4e4c7;
+}
+.city-welcome-copy p {
+  font-size: 13px;
+  line-height: 1.85;
+  color: #c0ceca;
+  max-width: 340px;
+}
+.city-feature-row {
+  display: flex;
+  gap: 16px;
+  margin: 25px 0 28px;
+  flex-wrap: wrap;
+}
+.city-feature-row span {
+  font-size: 10px;
+  color: #d7d7ba;
+  border-bottom: 1px solid #b9c6af55;
+  padding-bottom: 9px;
+}
+.city-welcome-copy .primary {
+  padding: 15px 24px;
+  font-size: 13px;
+}
+.city-welcome-copy > small {
+  display: block;
+  color: #c4ccc0;
+  font-size: 9px;
+  margin-top: 17px;
+}
+.city-welcome-stamp {
+  text-align: right;
+  align-self: flex-end;
+  filter: drop-shadow(0 2px 5px #17302d);
+}
+.city-welcome-stamp > strong {
+  display: block;
+  font:
+    54px/0.98 Georgia,
+    serif;
+  margin: 16px 0;
+  color: #fff0d0;
+}
+.city-welcome-stamp > strong i {
+  font-weight: normal;
+}
+.city-welcome-stamp > span {
+  font-size: 8px;
+}
+.city-location {
+  position: absolute;
+  top: 24px;
+  left: 26px;
+  display: grid;
+  gap: 6px;
+  pointer-events: none;
+  color: #fff3d8;
+  text-shadow: 0 2px 8px #172f3b;
+}
+.city-location > span {
+  font-size: 8px;
+  letter-spacing: 3px;
+}
+.city-location > strong {
+  font:
+    italic 25px Georgia,
+    serif;
+}
+.city-location > small {
+  font-size: 8px;
+  letter-spacing: 1.2px;
+}
+.city-stage-actions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 7px;
+}
+.city-stage-actions button {
+  border: 1px solid #eadfc75c;
+  border-radius: 8px;
+  color: #efe9d6;
+  background: #19373dcc;
+  display: grid;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+}
+.city-minimap {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  width: 174px;
+  border: 1px solid #c3cab080;
+  background: #1c373bea;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 5px 30px #10232b40;
+  cursor: pointer;
+  color: #e1d8ba;
+}
+.city-map {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.04;
+}
+.city-minimap > span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 0.7px;
+  padding: 9px 6px;
+  line-height: 1.4;
+}
+.city-speedometer {
+  position: absolute;
+  right: 27px;
+  bottom: 27px;
+  background: linear-gradient(135deg, #1e393ddd, #193039f2);
+  border: 1px solid #e4d7b944;
+  border-radius: 12px;
+  padding: 17px 21px 14px;
+  width: 156px;
+  color: #f1e7ca;
+  box-shadow: 0 8px 35px #172b3433;
+}
+.city-speedometer > strong {
+  font:
+    italic 64px/0.95 Georgia,
+    serif;
+  font-variant-numeric: tabular-nums;
+  display: block;
+  letter-spacing: -3px;
+}
+.city-speedometer > span {
+  font-size: 8px;
+  letter-spacing: 2px;
+  display: block;
+  margin: 8px 0 12px;
+}
+.city-gear {
+  position: absolute;
+  right: 14px;
+  top: 17px;
+  font:
+    19px Georgia,
+    serif;
+  color: #dfc392;
+  display: grid;
+  text-align: center;
+  gap: 5px;
+}
+.city-gear > span {
+  font: 6px sans-serif;
+  letter-spacing: 1px;
+  color: #b2c5bd;
+}
+.city-speed-bar {
+  height: 3px;
+  background: #8aa19440;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.city-speed-bar > i {
+  display: block;
+  height: 100%;
+  background: #e1c392;
+}
+.city-speedometer > small {
+  display: block;
+  margin-top: 10px;
+  font-size: 7px;
+  letter-spacing: 1.2px;
+  color: #bbcec5;
+}
+.city-toast {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #17383ee8;
+  color: #e8ddbb;
+  border: 1px solid #bbc5a84d;
+  border-radius: 30px;
+  padding: 11px 20px;
+  font-size: 11px;
+  line-height: 1.6;
+  max-width: 65%;
+  width: max-content;
+  text-align: center;
+  pointer-events: none;
+}
+.city-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #132c37b8;
+  backdrop-filter: blur(6px);
+  z-index: 5;
+}
+.city-pause-card {
+  max-width: 470px;
+  text-align: center;
+  padding: 36px;
+  border: 1px solid #96ac9755;
+  border-radius: 15px;
+  background: #1b363eed;
+  color: #d4d7c4;
+  box-shadow: 0 24px 60px #071f3544;
+}
+.city-pause-card h3 {
+  font:
+    italic 39px Georgia,
+    serif;
+  color: #f2dfb9;
+  margin: 15px 0;
+}
+.city-pause-card p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 15px 0 24px;
+}
+.city-pause-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 14px 0 20px;
+  flex-wrap: wrap;
+}
+.city-pause-card > small {
+  font-size: 10px;
+  line-height: 1.7;
+  display: block;
+  opacity: 0.7;
+}
+.city-trip-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 5px;
+  border-bottom: 1px solid #81988b3d;
+  color: #9fb3ad;
+  font-size: 10px;
+}
+.city-trip-strip b {
+  color: #e6d6b4;
+  font-weight: 500;
+}
+.city-trip-strip > span:first-child {
+  font-size: 8px;
+  letter-spacing: 1.6px;
+  color: #d5c8a2;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.city-trip-strip i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #b6cd95;
+}
+.city-settings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 22px 0 25px;
+  align-items: center;
+}
+.city-settings label {
+  display: grid;
+  gap: 7px;
+  font-size: 9px;
+  color: #9eb6af;
+  letter-spacing: 0.3px;
+}
+.city-settings select {
+  padding: 8px 25px 8px 9px;
+  color: #e0d7bb;
+  border: 1px solid #6e8d815f;
+  border-radius: 5px;
+  background: #213d43;
+  font:
+    11px "DM Sans",
+    sans-serif;
+}
+.city-settings label.city-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 17px;
+}
+.city-checkbox input {
+  accent-color: #d2bb8b;
+}
+.city-map-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  background: #162f37f5;
+  color: #ede0c2;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 30px;
+  overflow: auto;
+}
+.city-map-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.city-map-heading h3 {
+  font:
+    italic 30px Georgia,
+    serif;
+  margin: 8px 0 0;
+}
+.city-map-body {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex: 1;
+  min-height: 0;
+  padding: 20px 0;
+}
+.city-map.expanded {
+  height: 100%;
+  width: auto;
+  max-width: 60%;
+  max-height: 480px;
+  border-radius: 10px;
+  border: 1px solid #718e8055;
+  flex: 1;
+  min-height: 0;
+}
+.city-destinations {
+  display: grid;
+  gap: 7px;
+  flex: 1;
+}
+.city-destinations > button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #29464b;
+  border: 1px solid #869c8055;
+  border-radius: 6px;
+  padding: 11px;
+  text-align: left;
+  color: #e0d9bc;
+  cursor: pointer;
+}
+.city-destinations > button[aria-pressed="true"] {
+  border-color: #e5c28d;
+  background: #3b5350;
+}
+.city-destinations > button > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.city-destinations strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+}
+.city-destinations small {
+  display: block;
+  font-size: 8px;
+  color: #a9bdb3;
+  margin-top: 5px;
+}
+.city-destinations svg {
+  margin-left: auto;
+}
+.city-destinations > button.city-clear-route {
+  background: none;
+  border: 0;
+  color: #9fb8b0;
+  padding: 7px 0;
+  font-size: 9px;
+}
+.city-map-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.city-map-footer > span {
+  max-width: 270px;
+  font-size: 10px;
+  line-height: 1.7;
+  color: #b2c3b9;
+}
+.city-touch-controls {
+  display: none;
+}
+.city-pedal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-width: 58px;
+  height: 61px;
+  border: 1px solid #c6d0b16e;
+  border-radius: 10px;
+  background: #203f46d9;
+  color: #efe5c6;
+  touch-action: none;
+  user-select: none;
+}
+.city-pedal span:last-child {
+  font-size: 8px;
+}
+.city-pedal.accelerator {
+  background: #617765df;
+  color: #fff0c9;
+}
+.city-pedal:active {
+  background: #859a71;
+}
+.city-brake {
+  font-size: 22px;
+  line-height: 24px;
+}
+@media (pointer: coarse), (max-width: 700px) {
+  .city-touch-controls {
+    display: flex;
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
+    right: 13px;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .city-touch-controls > div {
+    display: flex;
+    gap: 7px;
+  }
+  .city-minimap {
+    bottom: 88px;
+    width: 123px;
+    left: 14px;
+  }
+  .city-speedometer {
+    bottom: 88px;
+    right: 14px;
+    width: 117px;
+    padding: 12px 15px;
+  }
+  .city-speedometer > strong {
+    font-size: 48px;
+  }
+  .city-speedometer > span {
+    font-size: 7px;
+    margin: 7px 0;
+  }
+  .city-speedometer > small {
+    font-size: 6px;
+  }
+  .city-gear {
+    font-size: 15px;
+    right: 10px;
+    top: 12px;
+  }
+  .city-gear > span {
+    font-size: 5px;
+  }
+}
+@media (max-width: 700px) {
+  .city-stage > canvas,
+  .focus-game .city-stage > canvas {
+    height: 540px;
+    max-height: 80svh;
+    min-height: 420px;
+    scroll-margin-top: 8px;
+  }
+  .city-welcome {
+    padding: 27px 23px;
+    align-items: center;
+    background: linear-gradient(90deg, #17353ce8, #17353c99);
+  }
+  .city-welcome-copy h3 {
+    font-size: 43px;
+    margin: 20px 0;
+  }
+  .city-welcome-copy p {
+    font-size: 11px;
+  }
+  .city-kicker {
+    font-size: 7px;
+    letter-spacing: 1.3px;
+    line-height: 1.7;
+  }
+  .city-welcome-stamp {
+    display: none;
+  }
+  .city-feature-row {
+    gap: 12px;
+    margin: 18px 0 24px;
+  }
+  .city-feature-row span {
+    font-size: 8px;
+  }
+  .city-welcome-copy > small {
+    font-size: 8px;
+    line-height: 1.7;
+  }
+  .city-location {
+    top: 17px;
+    left: 17px;
+  }
+  .city-location > strong {
+    font-size: 20px;
+  }
+  .city-location > small {
+    font-size: 6px;
+  }
+  .city-stage-actions {
+    top: 14px;
+    right: 12px;
+    gap: 5px;
+  }
+  .city-stage-actions button {
+    width: 32px;
+    height: 32px;
+  }
+  .city-toast {
+    top: 90px;
+    max-width: 90%;
+    font-size: 9px;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+  .city-trip-strip {
+    font-size: 9px;
+    gap: 7px;
+    flex-wrap: wrap;
+  }
+  .city-trip-strip > span:first-child {
+    font-size: 7px;
+  }
+  .city-trip-strip > span:last-child {
+    display: none;
+  }
+  .city-settings {
+    gap: 13px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .city-settings select {
+    width: 100%;
+    font-size: 10px;
+  }
+  .city-settings label.city-checkbox {
+    margin-top: 0;
+  }
+  .city-pause-card {
+    padding: 25px 17px;
+  }
+  .city-pause-card h3 {
+    font-size: 30px;
+  }
+  .city-pause-card p {
+    font-size: 11px;
+  }
+  .city-pause-actions .arcade-button {
+    font-size: 10px;
+  }
+  .city-map-overlay {
+    padding: 18px;
+  }
+  .city-map-heading h3 {
+    font-size: 25px;
+  }
+  .city-map-body {
+    display: block;
+    overflow: auto;
+    min-height: 0;
+    padding: 15px 0;
+  }
+  .city-map.expanded {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: 250px;
+    flex: none;
+  }
+  .city-destinations {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12px;
+    gap: 6px;
+  }
+  .city-destinations > button {
+    padding: 9px 7px;
+    gap: 5px;
+  }
+  .city-destinations strong {
+    font-size: 9px;
+  }
+  .city-destinations svg {
+    display: none;
+  }
+  .city-destinations small {
+    font-size: 7px;
+  }
+  .city-map-footer {
+    padding-top: 10px;
+  }
+  .city-map-footer > span {
+    display: none;
+  }
+  .city-map-footer > .primary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (pointer: coarse) and (max-height: 500px) and (min-width: 701px) {
+  .city-stage > canvas,
+  .focus-game .city-stage > canvas {
+    height: calc(100svh - 110px);
+    min-height: 240px;
+  }
+  .city-location {
+    top: 14px;
+    left: 18px;
+  }
+  .city-location > strong {
+    font-size: 20px;
+  }
+  .city-minimap {
+    width: 93px;
+    bottom: 82px;
+  }
+  .city-minimap > span {
+    font-size: 6px;
+    padding: 5px;
+  }
+  .city-speedometer {
+    bottom: 82px;
+  }
+  .city-speedometer > small {
+    display: none;
+  }
+  .city-toast {
+    top: 65px;
+    font-size: 9px;
+  }
+  .city-welcome {
+    padding: 20px 30px;
+  }
+  .city-welcome-copy h3 {
+    font-size: 35px;
+    margin: 10px 0;
+  }
+  .city-welcome-copy p {
+    display: none;
+  }
+  .city-feature-row {
+    margin: 12px 0;
+  }
+  .city-welcome-copy > small {
+    margin-top: 8px;
+  }
+  .city-map-overlay {
+    padding: 15px 25px;
+  }
+  .city-map-heading h3 {
+    font-size: 22px;
+  }
+  .city-map-body {
+    padding: 10px 0;
+  }
+  .city-destinations {
+    grid-template-columns: 1fr 1fr;
+  }
+  .city-destinations > button {
+    padding: 7px;
+  }
+  .city-destinations strong {
+    font-size: 9px;
+  }
+  .city-destinations small {
+    font-size: 7px;
+  }
+  .city-map-footer > span {
+    font-size: 8px;
+  }
+  .city-pause-card {
+    padding: 17px 28px;
+  }
+  .city-pause-card h3 {
+    font-size: 28px;
+    margin: 8px 0;
+  }
+  .city-pause-card p {
+    margin: 10px 0;
+  }
+  .city-pause-actions {
+    margin: 10px 0;
+  }
+  .city-pause-card > small {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .city-minimap {
+    width: 94px;
+  }
+  .city-minimap > span {
+    font-size: 6px;
+    padding: 7px 4px;
+  }
+  .city-speedometer {
+    width: 94px;
+    padding: 10px 11px;
+  }
+  .city-speedometer > strong {
+    font-size: 41px;
+  }
+  .city-speedometer > small {
+    font-size: 5px;
+    letter-spacing: 0.7px;
+  }
+  .city-gear {
+    right: 8px;
+    top: 10px;
+    font-size: 12px;
+  }
+  .city-location {
+    max-width: calc(100% - 105px);
+  }
+  .city-location > strong {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,512 @@
+.pocketputt-game {
+  --arcade-accent: #d9c99b;
+  max-width: 1210px;
+}
+.putt-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 900px) 245px;
+  gap: 24px;
+  align-items: start;
+}
+.putt-hole-heading {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 3px 19px;
+}
+.putt-hole-heading > div:first-child {
+  flex: 1;
+}
+.putt-hole-heading span {
+  font-size: 8px;
+  letter-spacing: 1.2px;
+  color: #9fb6a8;
+}
+.putt-hole-heading h3 {
+  font:
+    23px Georgia,
+    serif;
+  color: #e8dcbb;
+  margin: 7px 0 0;
+}
+.putt-hole-heading > div:not(:first-child) {
+  display: grid;
+  gap: 6px;
+  text-align: center;
+}
+.putt-hole-heading strong {
+  font:
+    24px Georgia,
+    serif;
+  color: #e4d5a8;
+}
+.putt-stage {
+  position: relative;
+  border: 1px solid #9d9c7477;
+  isolation: isolate;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #263d32;
+  box-shadow: 0 15px 45px #0004;
+}
+.putt-stage canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 900/620;
+  touch-action: none;
+  outline-offset: -3px;
+  scroll-margin-top: 8px;
+}
+.putt-stage .arcade-overlay {
+  background: #132e25ed;
+}
+.putt-stage .putt-intro {
+  background:
+    linear-gradient(0deg, #18382aef, #1c372cbf),
+    url("/assets/pocketputt.webp") center/cover;
+}
+.putt-wordmark {
+  font:
+    italic clamp(49px, 5vw, 75px) Georgia,
+    serif;
+  letter-spacing: -3px;
+  line-height: 0.95;
+  color: #f0dfb6;
+}
+.putt-wordmark > span {
+  display: block;
+  margin-left: 65px;
+  color: #d8caa0;
+}
+.putt-start-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.putt-intro .arcade-overlay-card p {
+  color: #b4c9ac;
+}
+.putt-intro .arcade-overlay-note {
+  font-size: 9px;
+  color: #a3bea5;
+}
+.putt-hole-result {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: #18382be8;
+  backdrop-filter: blur(3px);
+  color: #e3d3a4;
+  animation: putt-reveal 0.35s ease-out;
+}
+.putt-hole-result h3 {
+  font:
+    clamp(25px, 4vw, 38px) Georgia,
+    serif;
+  margin: 0;
+  color: #eee0b5;
+}
+.putt-hole-result > p {
+  font-size: 12px;
+  color: #aac4a6;
+  margin: 0 0 13px;
+}
+.putt-hole-result .arcade-eyebrow {
+  color: #afc4a2;
+  font-size: 8px;
+}
+.putt-controls {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: 17px;
+  align-items: center;
+  padding: 19px 0 13px;
+}
+.putt-aim-controls {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.putt-aim-controls label {
+  flex: 1;
+  min-width: 0;
+  color: #9fb7a5;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.putt-controls input[type="range"] {
+  display: block;
+  width: 100%;
+  margin: 8px 0 0;
+  accent-color: #d2c994;
+  height: 5px;
+  cursor: pointer;
+}
+.putt-aim-controls .arcade-button {
+  background: #284237;
+  border-color: #789c7144;
+  width: 32px;
+  padding: 8px;
+}
+.putt-power {
+  display: block;
+  color: #9fb7a5;
+  font-size: 8px;
+  letter-spacing: 1px;
+  position: relative;
+}
+.putt-power b {
+  float: right;
+  color: #d8d3a8;
+  font-weight: 400;
+  font-size: 9px;
+}
+.putt-hit {
+  min-width: 92px;
+  min-height: 39px;
+}
+.putt-underbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 0;
+}
+.putt-underbar > p {
+  flex: 1;
+  font-size: 10px;
+  line-height: 1.8;
+  margin: 0;
+  color: #a5bba8;
+}
+.putt-underbar .arcade-button {
+  font-size: 10px;
+  padding: 9px 12px;
+}
+.putt-sidebar {
+  padding-top: 76px;
+}
+.putt-scorecard {
+  padding: 21px 16px 12px;
+  border: 1px solid #6d8d6855;
+  border-radius: 9px;
+  background: linear-gradient(130deg, #294337, #1d352c);
+}
+.putt-scorecard h3 {
+  font:
+    21px Georgia,
+    serif;
+  color: #e2d4ac;
+  margin: 10px 0 20px;
+}
+.putt-scorecard-head,
+.putt-scorecard-row {
+  display: grid;
+  grid-template-columns: 1fr 23px 23px;
+  gap: 8px;
+  align-items: center;
+}
+.putt-scorecard-head {
+  font-size: 7px;
+  color: #8ba98e;
+  letter-spacing: 1px;
+  margin-bottom: 9px;
+}
+.putt-scorecard-row {
+  padding: 10px 0;
+  border-top: 1px solid #8fa17b22;
+  font-size: 10px;
+  color: #c0c9a6;
+}
+.putt-scorecard-row > span:first-child {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  min-width: 0;
+}
+.putt-scorecard-row small {
+  font-size: 9px;
+  color: #9fb89f;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.putt-scorecard-row strong {
+  font:
+    14px Georgia,
+    serif;
+  color: #d9d1a4;
+  font-weight: 400;
+}
+.putt-scorecard-row.under-par strong {
+  color: #bdda9c;
+}
+.putt-scorecard-row.current {
+  background: #8c9c6520;
+  margin: 0 -7px;
+  padding: 10px 7px;
+  border-radius: 3px;
+}
+.putt-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #91a57955;
+  padding-top: 16px;
+  margin-top: 8px;
+}
+.putt-total > span {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #a6b797;
+}
+.putt-total strong {
+  font:
+    26px Georgia,
+    serif;
+  color: #e1d0a0;
+}
+.putt-total small {
+  font-size: 12px;
+  color: #b2c591;
+}
+.putt-best {
+  font-size: 7px;
+  color: #b9b58b;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 16px 0 3px;
+}
+.putt-field-guide {
+  padding: 24px 4px;
+}
+.putt-field-guide p {
+  font-size: 10px;
+  line-height: 1.9;
+  color: #99b49f;
+}
+.putt-field-guide b {
+  color: #d4d4ac;
+  font-weight: 500;
+}
+.putt-field-guide label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: #c1c8a6;
+  margin-top: 18px;
+}
+.putt-field-guide input {
+  accent-color: #c6c28b;
+}
+.putt-field-guide .putt-keyboard {
+  font-size: 8px;
+  color: #809e89;
+  margin-top: 15px;
+}
+.putt-field-guide > .arcade-button {
+  font-size: 10px;
+  margin-top: 9px;
+  width: 100%;
+}
+@keyframes putt-reveal {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (max-width: 900px) {
+  .putt-layout {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .putt-sidebar {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+  .putt-field-guide {
+    padding: 12px 0;
+  }
+}
+@media (max-width: 600px) {
+  .putt-hole-heading {
+    padding: 10px 2px 14px;
+    gap: 18px;
+  }
+  .putt-hole-heading h3 {
+    font-size: 20px;
+  }
+  .putt-hole-heading span {
+    font-size: 7px;
+    letter-spacing: 0.9px;
+  }
+  .putt-hole-heading strong {
+    font-size: 21px;
+  }
+  .putt-controls {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding-top: 15px;
+  }
+  .putt-hit {
+    grid-column: 1/-1;
+    min-height: 43px;
+  }
+  .putt-aim-controls .arcade-button {
+    min-width: 31px;
+    min-height: 34px;
+  }
+  .putt-underbar {
+    align-items: start;
+  }
+  .putt-underbar > p {
+    font-size: 9px;
+  }
+  .putt-underbar .arcade-button {
+    font-size: 9px;
+    white-space: nowrap;
+    padding: 9px;
+  }
+  .putt-sidebar {
+    gap: 17px;
+  }
+  .putt-scorecard {
+    padding: 15px 12px;
+  }
+  .putt-scorecard h3 {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  .putt-scorecard .arcade-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .putt-scorecard-row small {
+    display: none;
+  }
+  .putt-scorecard-row {
+    padding: 7px 0;
+  }
+  .putt-scorecard-row.current {
+    padding: 7px;
+  }
+  .putt-field-guide .arcade-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .putt-field-guide p {
+    font-size: 9px;
+  }
+  .putt-field-guide label {
+    font-size: 9px;
+    align-items: start;
+  }
+  .putt-wordmark {
+    font-size: 43px;
+    line-height: 0.85;
+  }
+  .putt-wordmark > span {
+    display: inline;
+    margin-left: 5px;
+  }
+  .putt-intro .arcade-overlay-card p {
+    font-size: 10px;
+    line-height: 1.6;
+    margin: 10px auto 12px;
+  }
+  .putt-intro .arcade-eyebrow {
+    font-size: 6px;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+  }
+  .putt-start-actions .arcade-button {
+    font-size: 10px;
+    padding: 9px 10px;
+    gap: 5px;
+  }
+  .putt-start-actions .arcade-button svg {
+    width: 12px;
+  }
+  .putt-intro .arcade-overlay-note {
+    font-size: 7px;
+    margin-top: 9px;
+    letter-spacing: 0.1px;
+  }
+  .putt-stage .arcade-overlay {
+    padding: 14px;
+  }
+  .putt-stage .arcade-overlay-card > .primary {
+    padding: 9px 14px;
+    font-size: 10px;
+  }
+  .putt-hole-result {
+    gap: 7px;
+  }
+  .putt-hole-result > svg {
+    width: 22px;
+    height: 22px;
+  }
+  .putt-hole-result h3 {
+    font-size: 25px;
+  }
+  .putt-hole-result > p {
+    font-size: 10px;
+    margin: 0 0 6px;
+  }
+  .putt-hole-result .arcade-button {
+    font-size: 11px;
+  }
+  .putt-hole-result .arcade-eyebrow {
+    font-size: 7px;
+  }
+  .putt-stage .arcade-overlay-card > svg {
+    display: none;
+  }
+  .putt-stage .arcade-final-score {
+    font-size: 31px;
+    margin: 10px 0;
+  }
+  .putt-stage .arcade-overlay-card h3 {
+    font-size: 24px;
+  }
+  .putt-stage .arcade-overlay-card > .arcade-eyebrow {
+    font-size: 6px;
+    letter-spacing: 1px;
+  }
+  .putt-stage .arcade-overlay-card p {
+    font-size: 10px;
+    line-height: 1.6;
+    margin: 9px auto 12px;
+  }
+}
+@media (min-width: 901px) {
+  .putt-course-column {
+    width: 100%;
+    max-width: min(900px, max(580px, calc((100svh - 490px) * 1.4516)));
+    margin: 0 auto;
+  }
+  .focus-game .putt-course-column {
+    max-width: 900px;
+  }
+}
+@media (pointer: coarse) and (max-height: 500px) and (min-width: 701px) {
+  .putt-stage {
+    max-width: calc((100svh - 95px) * 1.4516);
+    margin-inline: auto;
+  }
+  .putt-controls {
+    margin-top: 10px;
+  }
+}
